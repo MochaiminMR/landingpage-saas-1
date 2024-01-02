@@ -524,7 +524,7 @@ col{
 
 
 /* 330px */
-@media (max-width: 330px) {
+@media (max-width: 430px) {
     .image-infoe-layout {
 
         display: flex;
@@ -680,4 +680,29 @@ col{
         width: 100%;
         /* Make the card full width */
     }
+}
+
+
+/* footer */
+
+.footer {
+    color: #5468e7;
+    background-color: #232340;
+}
+
+.footer .input-group.mb-3 {
+    border: none;
+}
+
+.footer .form-control {
+    border: none !important;
+    background-color: #F5F5F53D;
+    opacity: 0.75;
+    border-radius: 50;
+}
+
+.footer .input-group-text {
+    border: none !important;
+    background-color: #F5F5F53D;
+    opacity: 0.75;
 }
