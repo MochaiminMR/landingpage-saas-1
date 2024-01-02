@@ -147,6 +147,9 @@ col{
 /* Form */
 
 /* Navbar */
+.custom-toggler-icon {
+    background-color: white !important;
+}
 .gap-nav{
     gap: 56px;
     font-weight: 500;
@@ -167,6 +170,11 @@ col{
     .layout{
         margin: 0 15px;
     }
+
+        .gap-nav {
+            gap: 16px !important;
+            font-weight: 500;
+        }
 
 }
 /* Navbar */
