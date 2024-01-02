@@ -226,7 +226,6 @@ col{
             background-position: center;
             background-repeat: no-repeat;
             height: fit-content;
-            width: 520px !important;
         
     }
 
@@ -284,13 +283,13 @@ col{
         flex: 1;
         margin: 45px 15px !important;
     }
-
+/* 
         .mockup-image {
-            /* overflow: hidden;
+            overflow: hidden;
             width: 1000px;
             display: flex;
-            justify-content: center; */
-        }
+            justify-content: center;
+        } */
 
 
 }
@@ -300,12 +299,7 @@ col{
         margin: 25px 60px !important;
     }
         
-          .mockup-image {
-              overflow: hidden;
-            width: 1000px;
-                display: flex;
-                justify-content: center;
-          }
+         
 
                 .desc {
                     font-size: 18px;
@@ -318,7 +312,14 @@ col{
 
 }
 
+@media (max-width: 568px) {
+    .mockup-text {
+        flex: 1;
+        margin: 20px 15px !important;
+    }
 
+
+}
 
 .mockup-image {
     overflow: hidden;
@@ -331,6 +332,9 @@ col{
 }
 /* Mockup */
 
+
+
+
 /* Info */
 @media (max-width: 532px) {
 .image-infoe2-layout {
@@ -342,6 +346,31 @@ col{
     justify-content: space-between;
     max-width: 580px;
     }
+}
+
+@media (max-width: 330px) {
+    .image-infoe-layout {
+    
+            display: flex;
+            flex-wrap: wrap;
+            /* Ganti nilai ini sesuai kebutuhan Anda */
+            flex-direction: column !important;
+            justify-content: center !important;
+            align-items: start !important;
+            justify-content: space-between;
+        }
+
+          .info-image {
+              overflow: hidden;
+              width: 400px !important;
+          }
+    
+          .info-image img {
+    
+    
+              width: 460px !important;
+          }
+    
 }
 
 

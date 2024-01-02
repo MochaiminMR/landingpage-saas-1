@@ -1,7 +1,31 @@
-import React from 'react'
+import React, { useEffect, useState } from 'react'
 import { Container } from 'react-bootstrap'
 
 export const InfoSc  = () => {
+  const [windowWidth, setWindowWidth] = useState(window.innerWidth);
+
+  useEffect(() => {
+    const handleResize = () => {
+      setWindowWidth(window.innerWidth);
+    };
+
+    // Add event listener for window resize
+    window.addEventListener("resize", handleResize);
+
+    // Remove event listener on component unmount
+    return () => {
+      window.removeEventListener("resize", handleResize);
+    };
+  }, []);
+
+  let textInfoLayoutClass = "col-lg-6";
+
+  if (windowWidth <= 568 && windowWidth >= 535) {
+    textInfoLayoutClass = "col-6";
+  } else if (windowWidth < 535) {
+    textInfoLayoutClass = "col-lg-6";
+  }
+
   return (
     <Container>
       <div className="section" style={{ width: "fit-content" }}>
@@ -15,7 +39,7 @@ export const InfoSc  = () => {
               loading="lazy"
             />
           </div>
-          <div className="text-info-layout col-6">
+          <div className={`text-info-layout ${textInfoLayoutClass}`}>
             <h1 className="font-info mb-3">
               Chatss for your distributed teams
             </h1>

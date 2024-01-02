@@ -14,7 +14,7 @@ export const Mockup = () => {
             </div>
             <div className="mockup-text col-lg-6">
                 <h1 className="font-header mb-3">Chats for your distributed teams</h1>
-                <p className="desc">
+                <p className="lead text-dark fw-normal">
                     Team combines the immediacy of real-time chat with an email threading model.
                     With Team, you can catch up on important conversations while ignoring irrelevant
                     ones.

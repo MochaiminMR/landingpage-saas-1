@@ -11,8 +11,13 @@ return (
 
     <Container className="">
       <div className="hero-text-section layout">
-        <h1 className="hero-text">Instant collaboration for remote teams</h1>
-        <p className="desc-hero">
+        {/* <!-- Your content here --> */}
+      <h1 className="fw-bold d-none d-lg-block display-5">Instant collaboration for remote teams</h1>
+      <h1 className="fw-bold d-lg-none display-2">Instant collaboration for remote teams</h1>
+      {/* <!-- Add your content here --> */}
+
+
+        <p className="lead text-white">
           All-in-one place for your remote team to chat, collaborate and track
           project progress.
         </p>
