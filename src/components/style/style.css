@@ -90,6 +90,10 @@ col{
                 /* 150% */
         }
 
+     
+}
+@media (max-width:338px) {
+
         .font-header {
     
             color: var(--Dark-Blue);
@@ -167,7 +171,7 @@ col{
 }
 /* Navbar */
 
-/* Hero */
+/* ! Hero */
 
 .trns{
 
@@ -265,9 +269,11 @@ col{
         line-height: 27px;
 }
 
+/* ! Hero */
 
 
-/* Hero */
+
+
 
 /* Mockup */
 
@@ -344,7 +350,11 @@ col{
 
 
 
+
+
+
 /* Info */
+
 @media (max-width: 532px) {
 .image-infoe2-layout {
 
@@ -355,31 +365,6 @@ col{
     justify-content: space-between;
     max-width: 580px;
     }
-}
-
-@media (max-width: 330px) {
-    .image-infoe-layout {
-    
-            display: flex;
-            flex-wrap: wrap;
-            /* Ganti nilai ini sesuai kebutuhan Anda */
-            flex-direction: column !important;
-            justify-content: center !important;
-            align-items: start !important;
-            justify-content: space-between;
-        }
-
-          .info-image {
-              overflow: hidden;
-              width: 400px !important;
-          }
-    
-          .info-image img {
-    
-    
-              width: 460px !important;
-          }
-    
 }
 
 
@@ -471,7 +456,7 @@ col{
 
     .info-image {
         overflow: hidden;
-        width: 280px;
+        width: 280px !important;
     }
 
     .info-image img {
@@ -538,6 +523,32 @@ col{
 }
 
 
+/* 330px */
+@media (max-width: 330px) {
+    .image-infoe-layout {
+
+        display: flex;
+        flex-wrap: wrap;
+        /* Ganti nilai ini sesuai kebutuhan Anda */
+        flex-direction: column !important;
+        justify-content: center !important;
+        align-items: start !important;
+        justify-content: space-between;
+    }
+
+    .info-image {
+        overflow: hidden;
+        width: 300px !important;
+    }
+
+    .info-image img {
+
+
+        width: 300px !important;
+    }
+
+}
+
 .desc-info {
     font-size: 18px;
     line-height: 24px !important;
@@ -575,14 +586,14 @@ col{
 
 /* Info */
 
-/* Testimoni */
+/* ! Testimoni */
 
 .footer{
     padding-top: 76px;
     padding-bottom: 90px;
 }
 .tes {
-    width: 340px !important;
+    width: 18rem !important;
     margin: 0 14px !important;
     overflow: hidden;
 }
@@ -605,13 +616,38 @@ col{
     .testimoni-text {
             margin-left: 20px !important;
         }
+        .card-text{
+            font-size: 14px !important;
+        }
 }
 .testimoni-text{
         margin-left: 93px;
 }
 
 
+.testimoni{
 
+    padding-top: 200px;
+}
+
+@media (max-width: 338px) {
+.testimoni {
+        padding-top: 80px;
+    }
+
+  .card-text {
+      font-size: 16px !important;
+      padding: 20px;
+  }
+
+  .custom-navigation {
+      padding-right: 50px !important;
+      gap: 20px;
+      display: flex;
+      justify-content: end;
+      margin-top: 20px;
+  }
+}
 /* Testimoni */
 
 /* Style untuk navigasi kustom */
@@ -638,7 +674,6 @@ col{
     stroke: #5468E7;
     stroke-width: 2;
 }
-
 
 @media screen and (max-width: 568px) {
     .card {

@@ -18,8 +18,8 @@ function App() {
         <Hero></Hero>
         <Mockup></Mockup>
         <Info></Info>
-    <InfoSc></InfoSc>
-    <InfoTr></InfoTr>
+       <InfoSc></InfoSc>
+        <InfoTr></InfoTr>
         <Testimoni></Testimoni>
         <Foot></Foot>
 

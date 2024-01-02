@@ -26,7 +26,7 @@ export const Info = () => {
     textInfoLayoutClass = "col-lg-6";
   }
     return (
-      <Container>
+      <Container className='overflow-hidden '>
         <div className="section" style={{ width: "" }}>
           <div className="image-infoe-layout row flex-lg-row align-items-center justify-content-between g-5">
             <div className="info-image col-lg-6" style={{ padding: "0 0" }}>

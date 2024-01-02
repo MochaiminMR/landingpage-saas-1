@@ -65,14 +65,14 @@ useEffect(() => {
   );
 
   return (
-    <div className="puki overflow-hidden ">
-      <div className="pb-5" style={{ overflow: "hidden", paddingTop: "200px" }}>
-        <div className="flex-lg-row text-center pb-5 overflow-hidden ">
+    <div className="testimoni overflow-hidden ">
+      <div className="pb-5 " style={{ overflow: "hidden"}}>
+        <div className="flex-lg-row text-center pb-lg-5 pb-3">
           <h1 className="font-header ">What people say about Team</h1>
         </div>
         <div className="testimoni-text overflow-hidden ">
           <Swiper
-            className="overflow-hidden  p-5"
+            className="overflow-hidden  p-lg-5"
             onSlideChange={() => console.log("slide change")}
             onSwiper={(swiper) => console.log(swiper)}
             modules={[Virtual, Navigation, Pagination]}
@@ -131,24 +131,19 @@ useEffect(() => {
 };
 const TestimoniCard = ({ author, position, content }) => {
   return (
-    <div>
-      <Card className="p-2 border-0 ">
-        <Card.Body>
-
-          <img src="testimoni/rating.svg" alt="rating-image" className="mb-4" />
-          <Card.Text>{content}</Card.Text>
-          <div className="people d-flex fle-row pt-5 gap-2">
-            <img src="testimoni/people-1.png" alt="people-image" />
-
-            <div className="d-flex flex-column ">
-              <Card.Title>{author}</Card.Title>
-              <Card.Subtitle className="mb-2 blue text-lg-xs">
-                {position}
-              </Card.Subtitle>
-            </div>
+    <div className="card" style={{ width: "18rem", border: "none" }}>
+      <div className="card-body">
+   
+        <img src="testimoni/rating.svg" alt="rating-image" className="mb-4" />
+        <p className="card-text long-text">{content}</p>
+        <div className="people d-flex flex-row pt-5 gap-2 align-items-center">
+          <img src="testimoni/people-1.png" alt="people-image" />
+          <div className="d-flex flex-column">
+            <h5 className="card-title">{author}</h5>
+            <h6 className="card-subtitle mb-2 blue text-lg-xs">{position}</h6>
           </div>
-        </Card.Body>
-      </Card>
+        </div>
+      </div>
     </div>
   );
 };

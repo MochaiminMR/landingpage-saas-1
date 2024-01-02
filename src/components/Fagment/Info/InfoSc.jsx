@@ -27,7 +27,7 @@ export const InfoSc  = () => {
   }
 
   return (
-    <Container>
+    <Container className="overflow-hidden ">
       <div className="section" style={{ width: "fit-content" }}>
         <div className="image-infoe2-layout row flex-md-row-reverse flex-sm-row-reverse flex-lg-row-reverse  align-items-center justify-content-between g-5">
           <div
