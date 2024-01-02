@@ -89,6 +89,18 @@ col{
                 line-height: 24px !important;
                 /* 150% */
         }
+
+        .font-header {
+    
+            color: var(--Dark-Blue);
+            /* H1/Desktop */
+            font-family: Lexend Deca;
+            font-size: 34px;
+            font-style: normal;
+            font-weight: 700;
+            line-height: 42px;
+            /* 128% */
+        }
 }
 .desc{
     font-size: 18px;
@@ -264,10 +276,7 @@ col{
     margin-left: 93px;
 }
 @media (max-width: 568px) {
-    .mockup-text {
-            flex: 1;
-            margin: 45px 15px !important;
-        }
+   
 
          .mockup-image {
               overflow: hidden;

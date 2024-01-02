@@ -6,7 +6,7 @@ import { Form } from '../../Element/Form/Form';
 
 export const Hero = () => {
 return (
-  <div className="hero w-100 ">
+  <div className="hero">
     <Header></Header>
 
     <Container className="">

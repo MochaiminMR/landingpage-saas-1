@@ -1,5 +1,5 @@
-import React, { useState, useEffect } from "react";
-import { Container } from "react-bootstrap";
+import React, { useState, useEffect } from 'react';
+import { Container } from 'react-bootstrap';
 
 export const InfoTr = () => {
   const [windowWidth, setWindowWidth] = useState(window.innerWidth);
@@ -10,29 +10,27 @@ export const InfoTr = () => {
     };
 
     // Add event listener for window resize
-    window.addEventListener("resize", handleResize);
+    window.addEventListener('resize', handleResize);
 
     // Remove event listener on component unmount
     return () => {
-      window.removeEventListener("resize", handleResize);
+      window.removeEventListener('resize', handleResize);
     };
   }, []);
 
-  let textInfoLayoutClass = "col-lg-6";
+  let textInfoLayoutClass = 'col-lg-6';
 
   if (windowWidth <= 568 && windowWidth >= 535) {
-    textInfoLayoutClass = "col-6";
+    textInfoLayoutClass = 'col-6';
   } else if (windowWidth < 535) {
-    textInfoLayoutClass = "col-lg-6";
+    textInfoLayoutClass = 'col-lg-6';
   }
 
   return (
     <Container>
       <div className="section" style={{ width: "fit-content" }}>
         <div className="image-infoe-layout row flex-lg-row align-items-center justify-content-between g-5">
-          <div
-            className={`info-image col-lg-5 col-md-6 col-12`}
-            style={{ padding: "0 0" }}>
+          <div className={`info-image col-lg-5`} style={{ padding: "0 0" }}>
             <img
               src="info/info-3.png"
               className="d-block mx-lg-auto"

@@ -30,7 +30,9 @@ export const InfoSc  = () => {
     <Container>
       <div className="section" style={{ width: "fit-content" }}>
         <div className="image-infoe2-layout row flex-md-row-reverse flex-sm-row-reverse flex-lg-row-reverse  align-items-center justify-content-between g-5">
-          <div className="info-image col-lg-6" style={{ padding: "0 0" }}>
+          <div
+            className={`info-image ${textInfoLayoutClass}`}
+            style={{ padding: "0 0" }}>
             <img
               src="info/info-2.png"
               className="d-block mx-lg-auto "
