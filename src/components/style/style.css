@@ -1,0 +1,610 @@
+@import url('https://fonts.googleapis.com/css2?family=Lexend+Deca:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
+:root {
+    --Soft-Blue: #5468E7;
+    --Off-white: #F5F5F5;
+    --Grayish-Blue: #D1ECFD;
+    --Dark-Blue:#232340;
+}
+
+a {
+    text-decoration: none;
+}
+
+
+/* styles.css atau berkas stylesheet lainnya */
+.white-placeholder::placeholder {
+    font-size: 12px;
+    color: white;
+}
+
+
+.blue{
+    color: var(--Soft-Blue);
+
+}
+
+.white{
+    color: var(--Off-white);
+}
+
+.gray{
+    color: var(--Grayish-Blue);
+}
+
+.darkblue{
+    color: var(--Dark-Blue);
+}
+
+*{
+    
+    margin: 0;
+    padding: 0;
+    font-family: "Lexend Deca";
+
+}
+
+body{
+
+    background-color: var(--Off-white);
+}
+p{
+    margin: 0;
+    padding: 0;
+}
+
+col{
+    margin: 0;
+        padding: 0;
+}
+
+.section{
+    margin-top: 120px;
+}
+/*  */
+.font-header{
+    
+    color: var(--Dark-Blue);
+    /* H1/Desktop */
+    font-family: Lexend Deca;
+    font-size: 50px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 64px;
+    /* 128% */
+}
+
+.desc{
+    font-size: 18px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 27px;
+    width: 460px;
+}
+@media (max-width:568px) {
+    .desc {
+            font-size: 16px !important;
+                
+                font-weight: 400 !important;
+                line-height: 24px !important;
+                /* 150% */
+        }
+}
+.desc{
+    font-size: 18px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 27px;
+    width: 460px;
+}
+/*  */
+
+
+/* Button */
+
+.primary{
+    background: var(--Soft-Blue);
+    color: white;
+    padding: 12px 44px;
+    gap: 8px;
+    border: none !important;
+    border-radius: 4px;
+}
+.navbar-btn{
+    background: rgba(84, 104, 231, 0.50); /* Adjust the opacity value (0.8) as needed */
+    color: white;
+    padding: 12px 44px;
+    gap: 8px;
+    border: none !important;
+    border-radius: 4px;
+}
+/* Button */
+
+/* Form */
+.form-section{
+    padding: 10px 30px;
+    border-radius: 4px;
+        border: 2px solid var(--Grayish-Blue);
+        background: var(--Off-white, );
+}
+
+/* Form */
+
+/* Navbar */
+.gap-nav{
+    gap: 56px;
+    font-weight: 500;
+}
+
+.NavLink {
+    color: white !important;
+    text-decoration: underline;
+    
+}
+
+@media (max-width: 568px) {
+    .nav-layout {
+        padding-top: 40px;
+        /* Atur margin-top menjadi 0 pada media 568px atau kurang */
+    }
+
+    .layout{
+        margin: 0 15px;
+    }
+
+}
+/* Navbar */
+
+/* Hero */
+
+.trns{
+
+    opacity: 0.2;
+}
+.hero {
+
+    background-image: url('../../../public/hero/hero.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: fit-content;
+    /* Set the height to 100% of the viewport height */
+    /* Add any additional styling properties here */
+}
+
+.hero-text {
+    font-size: 50px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 64px;
+}
+
+.hero-text-section{
+    color: var(--Off-white);
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 16px;
+    max-width: 563px;
+    margin-top: 160px;
+}
+
+        .form-2 {
+            padding-right: 16px;
+        }
+
+@media (max-width: 568px) {
+    .hero-text-section {
+        margin-top: 80px;
+        /* Atur margin-top menjadi 0 pada media 568px atau kurang */
+    }
+
+    .hero{
+        background-image: url('../../../public/hero/hero-2.jpg');
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+            height: fit-content;
+    }
+
+    .form-2{
+        padding-right: 12px;
+    }
+
+}
+
+@media (max-width: 564px) {
+    .hero-text-section {
+        margin-top: 80px;
+        /* Atur margin-top menjadi 0 pada media 568px atau kurang */
+    }
+
+    .hero{
+        width: 100% !important;
+        background-image: url('../../../public/hero/hero-3.jpg');
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+            height: fit-content;
+            width: 520px !important;
+        
+    }
+
+        .form{
+            width: max-content;
+            display: flex;
+            flex-direction: column !important;
+            justify-content: center;
+            gap: 30px;
+        }
+   .form-2 {
+       padding-right: 0px !important;
+   }
+}
+
+.button-layout {
+    margin-bottom: 100px;
+}
+
+.desc-hero{
+    width: 397px;
+    font-size: 18px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 27px;
+}
+
+
+
+/* Hero */
+
+/* Mockup */
+
+.mockup-text {
+    flex: 1;
+    margin-left: 93px;
+}
+@media (max-width: 568px) {
+    .mockup-text {
+            flex: 1;
+            margin: 45px 15px !important;
+        }
+
+         .mockup-image {
+              overflow: hidden;
+            width: 650px !important;
+                display: flex;
+          }
+       
+                 
+}
+
+@media (max-width: 1141px) {
+    .mockup-text {
+        flex: 1;
+        margin: 45px 15px !important;
+    }
+
+        .mockup-image {
+            /* overflow: hidden;
+            width: 1000px;
+            display: flex;
+            justify-content: center; */
+        }
+
+
+}
+@media (max-width: 1019px) {
+    .mockup-text {
+        flex: 1;
+        margin: 25px 60px !important;
+    }
+        
+          .mockup-image {
+              overflow: hidden;
+            width: 1000px;
+                display: flex;
+                justify-content: center;
+          }
+
+                .desc {
+                    font-size: 18px;
+                    font-style: normal;
+                    font-weight: 400;
+                    line-height: 27px;
+                    width: 460px;
+                }
+
+
+}
+
+
+
+.mockup-image {
+    overflow: hidden;
+}
+
+.mockup-image img {
+    
+    order: -1;
+    width: 650px;
+}
+/* Mockup */
+
+/* Info */
+@media (max-width: 532px) {
+.image-infoe2-layout {
+
+    display: flex;
+    /* Ganti nilai ini sesuai kebutuhan Anda */
+    flex-direction: row !important;
+    align-items: start !important;
+    justify-content: space-between;
+    max-width: 580px;
+    }
+}
+
+
+/* 199px */
+@media (max-width: 1199px) {
+    .font-info {
+    
+            font-size: 50px !important;
+            font-style: normal;
+            font-weight: 700 !important;
+            line-height: 64px !important;
+    
+        }
+
+        .info-image {
+            overflow: hidden;
+            width: 400px;
+        }
+    
+        .info-image img {
+    
+            
+            width: 460px !important;
+        }
+
+        .info-layout{
+            display: flex !important;
+            flex-direction: row !important;
+    
+            max-width: fit-content !important;
+        }
+        .image-infoe-layout{
+
+            display: flex;
+                flex-wrap: wrap;
+                /* Ganti nilai ini sesuai kebutuhan Anda */
+                flex-direction: row;
+                align-items: start !important;
+                justify-content: space-between;
+                max-width: 900px;
+        }
+
+        .desc-info {
+            font-size: 16px !important;
+            font-weight: 400 !important;
+            line-height: 24px !important;
+            width: fit-content !important;
+            /* 150% */
+        }
+        .text-info-layout {
+            padding: 0 24px !important;
+        }
+
+
+        .info-image2 {
+            overflow: hidden;
+            width: 400px !important;
+        }
+
+        .info-image2 img {
+            width: 460px !important;
+        }
+
+                .image-infoe2-layout {
+        
+        display: flex;
+            flex-wrap: wrap;
+            /* Ganti nilai ini sesuai kebutuhan Anda */
+            flex-direction: row-reverse;
+            align-items: start !important;
+            justify-content: space-between;
+            max-width: 800px;
+                }
+                 
+
+        
+}
+
+/* 817px */
+@media (max-width: 817px) {
+    .font-info {
+
+        font-size: 34px !important;
+        font-style: normal;
+        font-weight: 700 !important;
+        line-height: 42px !important;
+
+    }
+
+    .info-image {
+        overflow: hidden;
+        width: 280px;
+    }
+
+    .info-image img {
+
+
+        width: 320px !important;
+    }
+
+    .info-layout {
+        display: flex !important;
+        flex-direction: row !important;
+
+        max-width: fit-content !important;
+    }
+
+    .image-infoe-layout {
+
+
+        display: flex;
+        flex-wrap: wrap;
+        /* Ganti nilai ini sesuai kebutuhan Anda */
+        flex-direction: row;
+        align-items: start !important;
+        justify-content: space-between;
+        max-width: 568px;
+    }
+
+    .desc-info {
+        font-size: 16px !important;
+        font-weight: 400 !important;
+        line-height: 24px !important;
+        width: fit-content !important;
+        /* 150% */
+    }
+
+    .text-info-layout {
+        padding: 0 24px !important;
+    }
+
+
+    .info-image2 {
+        overflow: hidden;
+        width: 280px !important;
+    }
+
+    .info-image2 img {
+        width: 320px !important;
+    }
+
+    .image-infoe2-layout {
+
+
+        display: flex;
+
+        /* Ganti nilai ini sesuai kebutuhan Anda */
+        flex-direction: row-reverse;
+        align-items: start !important;
+        justify-content: space-between;
+        max-width: 580px;
+    }
+
+
+
+}
+
+
+.desc-info {
+    font-size: 18px;
+    line-height: 24px !important;
+    width: fit-content !important;
+    /* 150% */
+}
+
+.text-info-layout {
+    padding: 0 60px;
+}
+
+.info-image2 img {
+    width: 535px;
+}
+
+.font-info{
+        color: var(--Dark-Blue);
+            /* H1/Desktop */
+            font-family: Lexend Deca;
+            font-size: 50px;
+            font-style: normal;
+            font-weight: 700;
+            line-height: 64px;
+}
+
+@media (max-width: 568px) {
+    .info-image2 img {
+        content: url('info/info-2-2.png');
+        /* Ganti dengan path gambar yang sesuai */
+        width: 320px;
+        /* Atur lebar gambar agar menyesuaikan */
+    }
+}
+
+
+/* Info */
+
+/* Testimoni */
+
+.footer{
+    padding-top: 76px;
+    padding-bottom: 90px;
+}
+.tes {
+    width: 340px !important;
+    margin: 0 14px !important;
+    overflow: hidden;
+}
+
+.card-shadow{
+    
+    background: #FFF;
+    box-shadow: 0px 10px 10px 0px rgba(118, 118, 178, 0.24);
+}
+
+.footer-text{
+    padding: 12px 0;
+    font-size: 12px;
+    font-style: normal;
+    color: white;
+}
+
+
+@media (max-width: 568px) {
+    .testimoni-text {
+            margin-left: 20px !important;
+        }
+}
+.testimoni-text{
+        margin-left: 93px;
+}
+
+
+
+/* Testimoni */
+
+/* Style untuk navigasi kustom */
+.custom-navigation {
+    padding-right: 150px;
+    gap: 20px;
+    display: flex;
+    justify-content: end;
+    margin-top: 20px;
+}
+
+.custom-swiper-button-prev,
+.custom-swiper-button-next {
+    background: transparent;
+    border: none;
+    cursor: pointer;
+    outline: none;
+}
+
+.custom-swiper-button-prev svg,
+.custom-swiper-button-next svg {
+    width: 32px;
+    height: 32px;
+    stroke: #5468E7;
+    stroke-width: 2;
+}
+
+
+@media screen and (max-width: 568px) {
+    .card {
+        width: 100%;
+        /* Make the card full width */
+    }
+}
